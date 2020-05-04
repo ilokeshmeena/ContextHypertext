@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">Context Hypertext</string>
+    <!--page 1-->
+    <string name="page1_1">ACCIDENTS</string>
+    <string name="page1_2">Accidents may occur anywhere, anytime and with anyone but these can be prevented by following simple safety rules.</string>
+    <string name="page1_3">Every place has safety rules of its own, such as on the road, at school and at home.</string>
+    <string name="page1_4">SAFETY ON THE ROAD</string>
+    <string name="page1_5">We can get hurt easily if we are not careful while using roads. We must be aware of how to give first aid in an emergency.</string>
+    <!--page2-->
+    <string name="page2_1">SAFETY AT HOME AND AT SCHOOL</string>
+    <string name="page2_2">Though homes and schools are believed to be the safest places, accidents can occur there also. Some common reasons for accidents are:</string>
+    <string name="page2_3">\u2022 Use of sharp objects</string>
+    <string name="page2_4">\u2022 Falling down</string>
+    <string name="page2_5">\u2022 Electric shocks</string>
+    <!--page3-->
+    <string name="page3_1">KEY TO GOOD HEALTH</string>
+    <string name="page3_2">Healthy food, good eating habits, regular exercise and proper rest and sleep are the keys to good health. We should avoid junk food as far as possible. Good health refers to the state of overall well-being of a person.</string>
+    <string name="page3_3">The key to good health lies in:</string>
+    <string name="page3_4">\u2022 Healthy food</string>
+    <string name="page3_5">\u2022 Proper Rest</string>
+    <!--page4-->
+    <string name="page4_1">FIRST AID</string>
+    <string name="page4_2">It is the first and intermediate help given to an injured or sick person, before the arrival of a doctor. It can save a person’s life if given properly. Some training is required to give first aid.</string>
+    <string name="page4_3">1. Do not gather around the victim when he/she is cut by sharp objects.</string>
+    <string name="page4_4">2. Do not panic, instead find some help. Call an adult and a doctor.</string>
+    <string name="page4_5">3. Make the injured person comfortable. Let him/her get proper rest.</string>
+    <!--page5-->
+    <string name="page5_1">Safety Rules</string>
+    <string name="page5_2">\u2022 Never jump a red light.</string>
+    <string name="page5_3">\u2022 It is better to cross the road at a zebra crossing (pedestrian crossing) or by a subway or a foot over bridge.</string>
+    <string name="page5_4">\u2022 Use the footpath for walking.</string>
+    <string name="page5_5">\u2022 Don’t forget to wear a seat belt.</string>
+    <string name="page5_6">We must ensure safety at home and at school</string>
+    <string name="page5_7">We must take healthy food</string>
+    <!--page6-->
+    <string name="page6_1">Use of sharp objects</string>
+    <string name="page6_2">\u2022Keep sharp objects out of reach of small children for safety.</string>
+    <string name="page6_3">\u2022Do not play with things made up of glass as these can break easily.</string>
+    <string name="page6_4">Falling down</string>
+    <string name="page6_5">\u2022We should not jump off a moving swing or ride.</string>
+    <string name="page6_6">\u2022Do not play or run up and down on the stairs.</string>
+    <string name="page6_7">We must know how to give first aid.</string>
+    <!--page7-->
+    <string name="page7_1">Electric shocks</string>
+    <string name="page7_2">Electric shock can be a fatal accident. The following measures must be taken to prevent electric shocks:</string>
+    <string name="page7_3">\u2022Never touch any electric switch or wire with wet hands or when standing barefoot on a wet floor.</string>
+    <string name="page7_4">\u2022Always use ISI marked electrical appliances.</string>
+    <string name="page7_5">We should follow safety rules.</string>
+    <!--page8-->
+    <string name="page8_1">Healthy food</string>
+    <string name="page8_2">Healthy and clean food gives energy and nutrients to the body. This keeps us in good health and keep us fit and protect us against various diseases.</string>
+    <string name="page8_3">Proper rest</string>
+    <string name="page8_4">We should also take out time to relax ourselves by taking a short nap in the day. Our body gets time to repair the wear and tear when we sleep and this ensures safety.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
