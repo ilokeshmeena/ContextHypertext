@@ -5,7 +5,9 @@ val noOfTransitions= arrayOf(0,0,0,0,0,0,0,0,0,0)
 val timeTaken= DoubleArray(9)
 var startTime:Long?=null
 var endTime:Long?=null
-
+var backButtonClick=0
+var isLastPage=false
+var isVisited=arrayOf(0,0,0,0,0,0,0,0,0,0)
 
 //package com.lmmarketings.contexthypertext
 //

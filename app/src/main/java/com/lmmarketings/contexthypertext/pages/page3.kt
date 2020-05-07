@@ -20,35 +20,19 @@ class page3 : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
         val main= inflater.inflate(R.layout.fragment_page3, container, false)
+        isVisited[3]=1
+        backButtonKeys.add(3)
+        noOfTransitions[3] = noOfTransitions[3]!! + 1
         startTime=System.currentTimeMillis()
-        main.page3_home.setOnClickListener{
-            endTime =System.currentTimeMillis()
-            timeTaken[3]= timeTaken[3]+((endTime!!- startTime!!).toDouble() /1000)
-            backButtonKeys.add(3)
-            noOfTransitions[1]= noOfTransitions[1]!!+1
-            fragmentManager!!.beginTransaction().replace(R.id.container,page1()).addToBackStack("3").commit()
-        }
-        main.page3_next.setOnClickListener {
-            endTime=System.currentTimeMillis()
-            timeTaken[3]= timeTaken[3]+((endTime!!- startTime!!).toDouble() /1000)
-            backButtonKeys.add(3)
-            noOfTransitions[4]= noOfTransitions[4]!!+1
-            fragmentManager!!.beginTransaction().replace(R.id.container,page4()).addToBackStack("3").commit()
-        }
         main.page3_tv4.setOnClickListener {
             endTime=System.currentTimeMillis()
             timeTaken[3]= timeTaken[3]+((endTime!!- startTime!!).toDouble() /1000)
-            backButtonKeys.add(3)
-            noOfTransitions[8]= noOfTransitions[8]!!+1
             fragmentManager!!.beginTransaction().replace(R.id.container,page8()).addToBackStack("3").commit()
         }
         main.page3_tv5.setOnClickListener {
             endTime=System.currentTimeMillis()
             timeTaken[3]= timeTaken[3]+((endTime!!- startTime!!).toDouble() /1000)
-            backButtonKeys.add(3)
-            noOfTransitions[8]= noOfTransitions[8]!!+1
             fragmentManager!!.beginTransaction().replace(R.id.container,page8()).addToBackStack("3").commit()
         }
         return  main

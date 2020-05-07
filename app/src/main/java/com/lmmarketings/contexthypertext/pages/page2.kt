@@ -23,40 +23,24 @@ class page2 : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         val main= inflater.inflate(R.layout.fragment_page2, container, false)
+        isVisited[2]=1
+        backButtonKeys.add(2)
+        noOfTransitions[2] = noOfTransitions[2]!! + 1
         startTime=System.currentTimeMillis()
-        main.page2_home.setOnClickListener {
-            endTime =System.currentTimeMillis()
-            timeTaken[2]= timeTaken[2]+((endTime!!- startTime!!).toDouble() /1000)
-            noOfTransitions[1]= noOfTransitions[1]!!+1
-            backButtonKeys.add(2)
-            fragmentManager!!.beginTransaction().replace(R.id.container,page1()).addToBackStack("2").commit()
-        }
-        main.page2_next.setOnClickListener {
-            endTime=System.currentTimeMillis()
-            timeTaken[2]= timeTaken[2]+((endTime!!- startTime!!).toDouble() /1000)
-            noOfTransitions[3]= noOfTransitions[3]!!+1
-            backButtonKeys.add(2)
-            fragmentManager!!.beginTransaction().replace(R.id.container,page3()).addToBackStack("2").commit()
-        }
+
         main.page2_tv3.setOnClickListener {
             endTime=System.currentTimeMillis()
             timeTaken[2]= timeTaken[2]+((endTime!!- startTime!!).toDouble() /1000)
-            noOfTransitions[6]= noOfTransitions[6]!!+1
-            backButtonKeys.add(2)
             fragmentManager!!.beginTransaction().replace(R.id.container,page6()).addToBackStack("2").commit()
         }
         main.page2_tv4.setOnClickListener {
             endTime=System.currentTimeMillis()
             timeTaken[2]= timeTaken[2]+((endTime!!- startTime!!).toDouble() /1000)
-            noOfTransitions[6]= noOfTransitions[6]!!+1
-            backButtonKeys.add(2)
             fragmentManager!!.beginTransaction().replace(R.id.container,page6()).addToBackStack("2").commit()
         }
         main.page2_tv5.setOnClickListener {
             endTime=System.currentTimeMillis()
             timeTaken[2]= timeTaken[2]+((endTime!!- startTime!!).toDouble() /1000)
-            noOfTransitions[7]= noOfTransitions[7]!!+1
-            backButtonKeys.add(2)
             fragmentManager!!.beginTransaction().replace(R.id.container,page7()).addToBackStack("2").commit()
 
         }

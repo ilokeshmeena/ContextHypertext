@@ -1,37 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@android:color/white"
-    android:orientation="vertical"
     tools:context=".Result">
-    <android.support.v7.widget.CardView
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <LinearLayout
-            android:layout_margin="10dp"
-            android:orientation="vertical"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-            <TextView
-                android:textSize="19sp"
-                android:textColor="@android:color/black"
-                android:id="@+id/tv_average_time"
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:orientation="vertical"
                 android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="19sp"
+                    android:textColor="@android:color/black"
+                    android:id="@+id/tv_average_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:textSize="19sp"
+                    android:textColor="@android:color/black"
+                    android:id="@+id/tv_average_transition"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <android.support.constraint.ConstraintLayout
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_margin="20dp"
+                android:id="@+id/save_result"
+                android:padding="15dp"
+                android:background="@drawable/button"
+                android:text="Save"
+                android:textColor="@android:color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
-            <TextView
-                android:textSize="19sp"
-                android:textColor="@android:color/black"
-                android:id="@+id/tv_average_transition"
-                android:layout_width="match_parent"
+            <Button
+                android:layout_margin="20dp"
+                android:id="@+id/result_new"
+                android:padding="15dp"
+                android:background="@drawable/button"
+                android:text="Start Again"
+                android:textColor="@android:color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
-        </LinearLayout>
-    </android.support.v7.widget.CardView>
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/rvMain"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
 
-</LinearLayout>
+        </android.support.constraint.ConstraintLayout>
+    </LinearLayout>
+
+</ScrollView>

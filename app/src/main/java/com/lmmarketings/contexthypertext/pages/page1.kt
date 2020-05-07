@@ -1,8 +1,10 @@
 package com.lmmarketings.contexthypertext.pages
 
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.support.v4.app.Fragment
+import android.support.v7.app.AppCompatActivity
 import android.text.SpannableString
 import android.text.method.LinkMovementMethod
 import android.text.style.ClickableSpan
@@ -26,7 +28,9 @@ class page1 : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         val main=inflater.inflate(R.layout.fragment_page1, container, false)
-
+        isVisited[1]=1
+        backButtonKeys.add(1)
+        noOfTransitions[1] = noOfTransitions[1]!! + 1
         startTime=System.currentTimeMillis()
         val page1_tv3=main.findViewById<TextView>(R.id.page1_tv3);
         val page1_tv5=main.findViewById<TextView>(R.id.page1_tv5);
@@ -38,9 +42,6 @@ class page1 : Fragment() {
             override fun onClick(widget: View) {
                 endTime=System.currentTimeMillis()
                 timeTaken[1]= timeTaken[1]+((endTime!!- startTime!!).toDouble() /1000)
-                backButtonKeys.add(1)
-                noOfTransitions[5]= noOfTransitions[5]!!+1
-                // We display a Toast. You could do anything you want here.
                 fragmentManager!!.beginTransaction().replace(R.id.container,page5()).addToBackStack("1").commit()
             }
         }
@@ -48,21 +49,8 @@ class page1 : Fragment() {
             override fun onClick(widget: View) {
                 endTime=System.currentTimeMillis()
                 timeTaken[1]= timeTaken[1]+((endTime!!- startTime!!).toDouble() /1000)
-                backButtonKeys.add(1)
-                noOfTransitions[4]= noOfTransitions[4]!!+1
-                // We display a Toast. You could do anything you want here.
                 fragmentManager!!.beginTransaction().replace(R.id.container,page4()).addToBackStack("1").commit()
             }
-        }
-//        main.page1_home.setOnClickListener {
-//            fragmentManager!!.beginTransaction().replace(R.id.container,page1()).addToBackStack("1").commit()
-//        }
-        main.page1_next.setOnClickListener {
-            endTime=System.currentTimeMillis()
-            timeTaken[1]= timeTaken[1]+((endTime!!- startTime!!).toDouble() /1000)
-            backButtonKeys.add(1)
-            noOfTransitions[2]= noOfTransitions[2]!!+1
-            fragmentManager!!.beginTransaction().replace(R.id.container,page2()).addToBackStack("1").commit()
         }
         ss1.setSpan(clickableSpan1,16,28,0)
         ss2.setSpan(clickableSpan2,96,105,0)

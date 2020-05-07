@@ -25,8 +25,10 @@ class page5 : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
         val main= inflater.inflate(R.layout.fragment_page5, container, false)
+        isVisited[5]=1
+        backButtonKeys.add(5)
+        noOfTransitions[5] = noOfTransitions[5]!! + 1
         startTime=System.currentTimeMillis()
         val page5_tv6=main.findViewById<TextView>(R.id.page5_tv6);
         val page5_tv7=main.findViewById<TextView>(R.id.page5_tv7);
@@ -38,9 +40,6 @@ class page5 : Fragment() {
             override fun onClick(widget: View) {
                 endTime =System.currentTimeMillis()
                 timeTaken[5]= timeTaken[5]+((endTime!!- startTime!!).toDouble() /1000)
-                // We display a Toast. You could do anything you want here.
-                backButtonKeys.add(5)
-                noOfTransitions[2]= noOfTransitions[2]!!+1
                 fragmentManager!!.beginTransaction().replace(R.id.container,page2()).addToBackStack("5").commit()
             }
         }
@@ -48,9 +47,6 @@ class page5 : Fragment() {
             override fun onClick(widget: View) {
                 endTime=System.currentTimeMillis()
                 timeTaken[5]= timeTaken[5]+((endTime!!- startTime!!).toDouble() /1000)
-                backButtonKeys.add(5)
-                noOfTransitions[8]= noOfTransitions[8]!!+1
-                // We display a Toast. You could do anything you want here.
                 fragmentManager!!.beginTransaction().replace(R.id.container,page8()).addToBackStack("5").commit()
             }
         }
@@ -60,20 +56,6 @@ class page5 : Fragment() {
         page5_tv7.movementMethod= LinkMovementMethod.getInstance()
         page5_tv6.text=ss1
         page5_tv7.text=ss2
-        main.page5_home.setOnClickListener {
-            endTime=System.currentTimeMillis()
-            timeTaken[5]= timeTaken[5]+((endTime!!- startTime!!).toDouble() /1000)
-            backButtonKeys.add(5)
-            noOfTransitions[1]= noOfTransitions[1]!!+1
-            fragmentManager!!.beginTransaction().replace(R.id.container,page1()).addToBackStack("5").commit()
-        }
-        main.page5_next.setOnClickListener {
-            endTime=System.currentTimeMillis()
-            timeTaken[5]= timeTaken[5]+((endTime!!- startTime!!).toDouble() /1000)
-            backButtonKeys.add(5)
-            noOfTransitions[6]= noOfTransitions[6]!!+1
-            fragmentManager!!.beginTransaction().replace(R.id.container,page6()).addToBackStack("5").commit()
-        }
         return main
     }
 
