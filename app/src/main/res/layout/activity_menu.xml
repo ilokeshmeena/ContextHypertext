@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuActivity">
+<android.support.v7.widget.CardView
+    app:cardElevation="5dp"
+    app:cardCornerRadius="8dp"
+    android:layout_gravity="center"
+    android:layout_margin="15dp"
+    android:layout_width="match_parent"
+    android:layout_height="150dp">
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:id="@+id/menu_online"
+            android:padding="15dp"
+            android:background="@drawable/button"
+            android:text="Online"
+            android:visibility="gone"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:visibility="gone"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:id="@+id/menu_offline"
+            android:padding="15dp"
+            android:background="@drawable/button"
+            android:text="Start"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:id="@+id/menu_login"
+            android:padding="15dp"
+            android:background="@drawable/button"
+            android:text="Login"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</android.support.v7.widget.CardView>
+</FrameLayout>

@@ -29,7 +29,7 @@ class page4 : Fragment() {
         val main=inflater.inflate(R.layout.fragment_page4, container, false)
         isVisited[4]=1
         backButtonKeys.add(4)
-        noOfTransitions[4] = noOfTransitions[4]!! + 1
+//        noOfTransitions[4] = noOfTransitions[4]!! + 1
         startTime=System.currentTimeMillis()
         val page4_tv3=main.findViewById<TextView>(R.id.page4_tv3);
         val page4_tv5=main.findViewById<TextView>(R.id.page4_tv5);
@@ -41,6 +41,7 @@ class page4 : Fragment() {
             override fun onClick(widget: View) {
                 // We display a Toast. You could do anything you want here.
                 endTime =System.currentTimeMillis()
+                noOfTransitions[6]= noOfTransitions[6]!!+1
                 timeTaken[4]= timeTaken[4]+((endTime!!- startTime!!).toDouble() /1000)
                 fragmentManager!!.beginTransaction().replace(R.id.container,page6()).addToBackStack("4").commit()
             }
@@ -48,6 +49,7 @@ class page4 : Fragment() {
         val clickableSpan2= object : ClickableSpan() {
             override fun onClick(widget: View) {
                 endTime=System.currentTimeMillis()
+                noOfTransitions[8]= noOfTransitions[8]!!+1
                 timeTaken[4]= timeTaken[4]+((endTime!!- startTime!!).toDouble() /1000)
                 fragmentManager!!.beginTransaction().replace(R.id.container,page8()).addToBackStack("4").commit()
             }

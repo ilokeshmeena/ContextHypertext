@@ -29,7 +29,7 @@ class page6 : Fragment() {
         val main= inflater.inflate(R.layout.fragment_page6, container, false)
         isVisited[6]=1
         backButtonKeys.add(6)
-        noOfTransitions[6] = noOfTransitions[6]!! + 1
+//        noOfTransitions[6] = noOfTransitions[6]!! + 1
         startTime=System.currentTimeMillis()
         val page6_tv2=main.findViewById<TextView>(R.id.page6_tv2);
         val page6_tv7=main.findViewById<TextView>(R.id.page6_tv7);
@@ -40,6 +40,7 @@ class page6 : Fragment() {
         val clickableSpan1 = object : ClickableSpan() {
             override fun onClick(widget: View) {
                 endTime =System.currentTimeMillis()
+                noOfTransitions[2]= noOfTransitions[2]!!+1
                 timeTaken[6]= timeTaken[6]+((endTime!!- startTime!!).toDouble() /1000)
                 fragmentManager!!.beginTransaction().replace(R.id.container,page2()).addToBackStack("6").commit()
             }
@@ -47,6 +48,7 @@ class page6 : Fragment() {
         val clickableSpan2= object : ClickableSpan() {
             override fun onClick(widget: View) {
                 endTime=System.currentTimeMillis()
+                noOfTransitions[4]= noOfTransitions[4]!!+1
                 timeTaken[6]= timeTaken[6]+((endTime!!- startTime!!).toDouble() /1000)
                 fragmentManager!!.beginTransaction().replace(R.id.container,page4()).addToBackStack("6").commit()
             }

@@ -1,14 +1,62 @@
 package com.lmmarketings.contexthypertext
 
+import com.lmmarketings.contexthypertext.data.viewmodel.Result
+
 val backButtonKeys=ArrayList<Int>()
 val noOfTransitions= arrayOf(0,0,0,0,0,0,0,0,0,0)
 val timeTaken= DoubleArray(9)
 var startTime:Long?=null
 var endTime:Long?=null
-var backButtonClick=0
 var isLastPage=false
 var isVisited=arrayOf(0,0,0,0,0,0,0,0,0,0)
-
+var startTimeEye:Long?=null
+var endTimeEye:Long?=null
+var eyeTimeTaken:Long=0
+var noOfTimesEye:Int=0
+var noOfTimesEyeClosed:Int=0
+var noOfTimesEyeNotFound:Int=0
+var isOldEye=ArrayList<Int>()
+var timeEye:Double?=null
+var averageTransition=0;
+var statusInternet:Boolean?=null;
+var data:Result?=null
+var dataLength:Int?=null
+var current:Int?=null
+var averageTime=0.0;
+var startTimeoffline:Long?=null
+var endTimeoffline:Long?=null
+var offlineTime:Double?=null
+var falvour:Int?=null
+ fun reassignEverything(){
+     statusInternet=null
+     data=null
+     dataLength=null
+     current=null
+     averageTime=0.0
+     startTimeoffline=null
+     endTimeoffline=null
+     offlineTime=null
+     noOfTimesEye=0
+     isLastPage=false
+     backButtonKeys.clear()
+     startTime=0
+     endTime=0
+     startTimeEye=0
+     endTimeEye=0
+     noOfTransitions.fill(0, 0)
+     timeTaken.fill(0.0, 0)
+     eyeTimeTaken=0
+     noOfTimesEye=0
+     noOfTimesEyeNotFound=0
+     noOfTimesEyeClosed=0
+     timeEye=0.0
+     statusInternet=null
+     isOldEye.clear()
+     isOldEye.add(2)
+     startTimeEye=0
+     endTimeEye=0
+     isVisited.fill(0,0)
+ }
 //package com.lmmarketings.contexthypertext
 //
 //import android.Manifest

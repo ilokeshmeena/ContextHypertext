@@ -23,15 +23,17 @@ class page3 : Fragment() {
         val main= inflater.inflate(R.layout.fragment_page3, container, false)
         isVisited[3]=1
         backButtonKeys.add(3)
-        noOfTransitions[3] = noOfTransitions[3]!! + 1
+//        noOfTransitions[3] = noOfTransitions[3]!! + 1
         startTime=System.currentTimeMillis()
         main.page3_tv4.setOnClickListener {
             endTime=System.currentTimeMillis()
+            noOfTransitions[8]= noOfTransitions[8]!!+1
             timeTaken[3]= timeTaken[3]+((endTime!!- startTime!!).toDouble() /1000)
             fragmentManager!!.beginTransaction().replace(R.id.container,page8()).addToBackStack("3").commit()
         }
         main.page3_tv5.setOnClickListener {
             endTime=System.currentTimeMillis()
+            noOfTransitions[8]= noOfTransitions[8]!!+1
             timeTaken[3]= timeTaken[3]+((endTime!!- startTime!!).toDouble() /1000)
             fragmentManager!!.beginTransaction().replace(R.id.container,page8()).addToBackStack("3").commit()
         }

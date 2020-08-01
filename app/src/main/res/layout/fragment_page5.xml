@@ -16,11 +16,11 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@fonts/times-new-roman"
+            android:fontFamily="@string/font_times_new_roman"
             android:padding="5dp"
             android:text="@string/page5_1"
             android:textColor="@android:color/black"
-            android:textSize="21sp"
+            android:textSize="@dimen/text_size_constant"
             android:textStyle="bold" />
 
         <ImageView
@@ -33,55 +33,55 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@fonts/times-new-roman"
+            android:fontFamily="@string/font_times_new_roman"
             android:padding="5dp"
             android:text="@string/page5_2"
             android:textColor="@android:color/black"
-            android:textSize="19sp" />
+            android:textSize="@dimen/text_size_constant" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@fonts/times-new-roman"
+            android:fontFamily="@string/font_times_new_roman"
             android:padding="5dp"
             android:text="@string/page5_3"
             android:textColor="@android:color/black"
-            android:textSize="19sp" />
+            android:textSize="@dimen/text_size_constant" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@fonts/times-new-roman"
+            android:fontFamily="@string/font_times_new_roman"
             android:padding="5dp"
             android:text="@string/page5_4"
             android:textColor="@android:color/black"
-            android:textSize="19sp" />
+            android:textSize="@dimen/text_size_constant" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@fonts/times-new-roman"
+            android:fontFamily="@string/font_times_new_roman"
             android:padding="5dp"
             android:text="@string/page5_5"
             android:textColor="@android:color/black"
-            android:textSize="19sp" />
+            android:textSize="@dimen/text_size_constant" />
 
         <TextView
             android:id="@+id/page5_tv6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@fonts/times-new-roman"
+            android:fontFamily="@string/font_times_new_roman"
             android:padding="5dp"
             android:textColor="@android:color/black"
-            android:textSize="19sp" />
+            android:textSize="@dimen/text_size_constant" />
 
         <TextView
             android:id="@+id/page5_tv7"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@fonts/times-new-roman"
+            android:fontFamily="@string/font_times_new_roman"
             android:padding="5dp"
             android:textColor="@android:color/black"
-            android:textSize="19sp" />
+            android:textSize="@dimen/text_size_constant" />
     </LinearLayout>
 </ScrollView>

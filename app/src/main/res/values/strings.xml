@@ -1,5 +1,5 @@
-<resources>
-    <string name="app_name">Context Hypertext</string>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Data</string>
     <!--page 1-->
     <string name="page1_1">ACCIDENTS</string>
     <string name="page1_2">Accidents may occur anywhere, anytime and with anyone but these can be prevented by following simple safety rules.</string>
@@ -54,5 +54,7 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="font_arial" tools:ignore="ReferenceType">@font/arial</string>
+    <string name="font_times_new_roman" tools:ignore="ReferenceType">@font/times_new_roman</string>
 
 </resources>

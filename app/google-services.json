@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "635235879755",
+    "firebase_url": "https://context-hypertext.firebaseio.com",
+    "project_id": "context-hypertext",
+    "storage_bucket": "context-hypertext.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:635235879755:android:ea29915d10d0201cf336ce",
+        "android_client_info": {
+          "package_name": "com.lmmarketings.contexthypertext"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "635235879755-rbb4ijcnlmvmq2kmeh01n2skqibttn7l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5aMvUeHm-C_mFaGNXMtA8WF0zyTwiXLs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "635235879755-rbb4ijcnlmvmq2kmeh01n2skqibttn7l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
